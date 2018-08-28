@@ -556,28 +556,7 @@ $(function(){
   });
   });
 </script>
-<script>
-    $(document).ready(function () {
-    $('.menu_access').on('click', function () {
-        var menu_id = $(this).data('id');
-         //alert(menu_id);
-        $.ajax({
-            type: 'POST',
-           url: '{{ base_url }}resturant/category/categoryaccess/' + menu_id,
-            success:function(data)
-            {
-                  window.location = "{{ base_url }}resturant/menus/resturant/{{restaurant_id}}/"+menu_id;
-            },
-            error:function()
-            {
-                alert("Error");
-            }
-            
-        });
-        
-    });
-    });
-</script>
+
 
 </body>
 </html>                     
