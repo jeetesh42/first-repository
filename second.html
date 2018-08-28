@@ -534,29 +534,6 @@
     </script>
 
 
-<script type="text/javascript">
-$(function(){
-  var colpick = $('.category_color_picker').each( function() {
-    //alert(colpick);
-    $(this).minicolors({
-      control: $(this).attr('data-control') || 'c_color',
-      inline: $(this).attr('data-inline') === 'true',
-      letterCase: 'lowercase',
-      opacity: false,
-      change: function(hex, opacity) {
-        if(!hex) return;
-        if(opacity) hex += ', ' + opacity;
-        try {
-          console.log(hex);
-        } catch(e) {}
-        $(this).select();
-      },
-      theme: 'bootstrap'
-    });
-  });
-  });
-</script>
-
 <script>
     
 function get _pull(){
